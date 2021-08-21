@@ -34,9 +34,7 @@ pipeline {
             }
             steps {
 
-                // sh 'ls -lah ${WORKSPACE}/sources/add2vals.py'
-                // sh 'pyinstaller -F ${WORKSPACE}/sources/add2vals.py'
-                sh 'sleep 5000'
+                sh '/root/.pyenv/shims/pyinstaller -F ${WORKSPACE}/sources/add2vals.py'
             }
             post {
                 success {
